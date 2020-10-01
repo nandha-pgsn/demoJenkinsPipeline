@@ -13,6 +13,12 @@ pipeline {
                 sh 'python hello.py'
             }
         }
+        stage('Confirmation All Good') {
+            steps {
+                echo 'I am declairing that Pipeline is successful'
+                sh 'echo "ALL GOOD"'
+            }
+        }
   }
 }
 
